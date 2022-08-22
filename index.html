@@ -1,0 +1,144 @@
+<!doctype HTML>
+<head>
+	<meta charset="utf-8" />
+   	<script type="text/javascript" src="accueil.js"></script>
+   	<link rel="stylesheet" href="accueil.css">
+   	<link rel="icon" type="image/png" sizes="32x32" href="img/logo_mini.png">
+	<title>Martin ZERBIB SEBIROT - Portfolio</title>
+</head>
+<body>
+	<nav id="navbar">	
+		<a href="#entrance">Home</a>
+		<a href="#work">Experience</a>
+		<a href="#skills_title">Skills</a>
+		<a href="#project">Projects</a>
+		<a href="#studies">Studies</a>
+		<a href="#contact">Contact</a>
+	</nav>
+	<div id="entrance">
+	<h1><span id="name"></span><span class="underscore">_</span></h1>
+	</div>
+	<div id="me">
+		<h2>Who am I ?<span class="underscore">_</span></h2>
+		Hi! I'm Martin ZERBIB SEBIROT, I'm 21 and I'm a student of Polytech Paris Saclay, a french engineering school. I'm currently in my 3rd year of a 5 years degree in Computer Science and I'm looking for an internship for the summer of 2023. I'm a very curious person and I like to learn new things. I'm also a very hard worker and I like to challenge myself. That is why, after one year in health studies, I have passed in engineering.
+	</div>
+	<div id="work">
+		<h2>Working experience<span class="underscore">_</span></h2>
+		<div class="wrap">
+			<div class="contain"><img src="img/asn.png" alt="logo asn" class="company"></div>
+			<div class="description">
+				<h6>2021 - 2024 • Nozay, France</h6><h3>Alcatel Submarine Networks (ASN)</h3>
+				<span>I'm working for ASN following my block release training. My assignment in the company is to work on the intranet of the Research & Development LNS group, by improving it, create new functionalities, etc. in order to make work easier for everyone in the LNS group</span>
+				<h6>HTML CSS Bootstrap JavaScript JQuery AJAX WebSockets PHP MySQL</h6>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="contain"><img src="img/stic.png" alt="logo stic" class="company"></div>
+			<div class="description">
+				<h6>2021 • Les Ulis, France</h6><h3>S.T.I.C.</h3>
+			A two-month summer job in the company. I prepared radio transmission bays for highway radio. It also allowed me to discover the world of work and to learn how to work in a team.
+			</div>
+		</div>
+	</div>
+
+	<div id="skills_title">
+		<h2>Skills<span class="underscore">_</span></h2>
+		
+		<input onclick="skills(this.value);" type="radio" value="all" name="skills" class="btn-check" id="all" autocomplete="off" checked>	<label class="btn btn-outline-primary rounded-pill" for="all">All</label>
+		<input onclick="skills(this.value);" type="radio" value="software" name="skills" class="btn-check" id="soft" autocomplete="off">	<label class="btn btn-outline-primary rounded-pill" for="soft">Sofware Developpement</label>
+		<input onclick="skills(this.value);" type="radio" value="graphics" name="skills" class="btn-check" id="graph" autocomplete="off">	<label class="btn btn-outline-primary rounded-pill" for="graph">Computer Graphics</label>
+		<input onclick="skills(this.value);" type="radio" value="web" name="skills" class="btn-check" id="web" autocomplete="off">			<label class="btn btn-outline-primary rounded-pill" for="web">Web</label>
+		<input onclick="skills(this.value);" type="radio" value="front" name="skills" class="btn-check" id="front" autocomplete="off">		<label id="frontb" class="btn btn-outline-secondary rounded-pill" for="front">Front-End</label>
+		<input onclick="skills(this.value);" type="radio" value="back" name="skills" class="btn-check" id="back" autocomplete="off">		<label id="backb" class="btn btn-outline-secondary rounded-pill" for="back">Back-End</label>
+		<input onclick="skills(this.value);" type="radio" value="other" name="skills" class="btn-check" id="other" autocomplete="off">		<label class="btn btn-outline-primary rounded-pill" for="other">Other</label>
+	
+		<div id="skills">
+			<img alt="C" class="software" src="img/c.png">
+			<img alt="C++" class="software" src="img/cpp.png">
+			<img alt="OpenGL" class="graphics" src="img/opengl.png">
+			<img alt="Java" class="software" src="img/java.png">
+			<img alt="HTML" class="web front" src="img/html.png">
+			<img alt="CSS" class="web front" src="img/css.png">
+			<img alt="Bootstrap" class="web front" src="img/bootstrap.png">
+			<img alt="JavaScript" class="web front" src="img/js.png">
+			<img alt="JQuerry" class="web front" src="img/jquery.png">
+			<img alt="AJAX" class="web front" src="img/ajax.png">
+			<img alt="Socket.io/WebSockets" class="web back" src="img/socket.png">
+			<img alt="PHP" class="web back" src="img/php.png">
+			<img alt="MySQL/SQL" class="web back" src="img/mysql.png">
+			<img alt="Git" class="other" src="img/git.png">
+			<img alt="UML" class="other" src="img/uml.png">
+		</div>
+	</div>
+	
+	<div id="project">
+		<h2>Projects<span class="underscore">_</span></h2>
+		<div class="row">
+			<div class="col-6">
+				<img src="img/felicette.png" alt="Picture of the project showing the solar system" class="projectimg">
+			</div> 
+			<div class="col-6">
+				<h3>Felicette</h3><h6>2022</h6>
+				Solar system simulation group project with a two-week deadline.
+				The different positions of the planets and the sun are calculated from the gravity forces between the different celestial bodies over time...
+				<h6>C++ OpenGL</h6>
+				<a href="https://github.com/MarreTeint/Felicette" target="_blank"><img src="img/github_mini.png" alt="GitHub" class="githublink"></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h3>L'Overcut</h3><h6>2022</h6> 
+				My first website, on the theme of formula 1. This website contain a lot of information about the sport, like race results or news, and a forum where you can talk about the sport...
+				<h6>HTML CSS Bootstrap JavaScript PHP MySQL</h6>
+				<a href="https://github.com/MarreTeint/Overcut" target="_blank"><img src="img/github_mini.png" alt="GitHub" class="githublink"></a>
+			</div>
+			<div class="col-6">
+				<img src="img/overcut.png" alt="Picture of the project showing the index webpage" class="projectimg">
+			</div> 
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<h3>Amusement park simulation</h3><h6>2022</h6> <h6>C</h6>
+				<a href="https://github.com/MarreTeint/Parc" target="_blank"><img src="img/github_mini.png" alt="GitHub" class="githublink"></a>
+			</div>
+			<div class="col-4">
+				<h3>Paris tree association software</h3><h6>2021</h6> <h6>Java</h6>
+				<a href="https://github.com/2maxime0/java_project" target="_blank"><img src="img/github_mini.png" alt="GitHub" class="githublink"></a>
+			</div>
+			<div class="col-4">
+				<h3>Sudoku Solver</h3><h6>2020</h6> <h6>C++</h6>
+			</div>
+		</div>
+	</div>
+
+	<div id="studies">
+		<div class="row">
+			<h2>Studies<span class="underscore">_</span></h2>
+			<div class="col-2"><button class="btn btn-outline-danger rounded-circle">2020 - 2024</button>	</div>
+			<div class="col-4">Engineer</div>	
+			<div class="col-6"><img src="img/polytech.png" alt="logo polytech"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"><button class="btn btn-outline-danger rounded-circle">2019-2020</button></div>
+			<div class="col-4">PACES</div>	
+			<div class="col-6"><img src="img/universite.png" alt="logo université paris saclay"></div>
+		</div>
+		<div class="row">
+			<div class="col-2"><button class="btn btn-outline-danger rounded-circle">2019</button></div>
+			<div class="col-4">Baccalauréat Scientifique</div>	
+			<div class="col-6"><img src="img/fustel.png" alt="logo lycée fustel de coulanges"></div>
+		</div>
+	</div>
+	
+
+	
+	<div class="text-center" id="contact">
+		<h2>Contact<span class="underscore">_</span></h2>
+		<a href="https://www.linkedin.com/in/martin-zerbib-sebirot-394424206/" target="_blank"><div class="contact rounded"><img src="img/linkedin.png" alt="linkedin">	<span class="hiden text-center">Martin ZERBIB SEBIROT</span></div></a>
+		<a href="https://github.com/MarreTeint" target="_blank"><div class="contact rounded"><img src="img/github.png" alt="GitHub"><span class="hiden text-center">	MarreTeint</span></div></a>
+		<a href="mailto:martinzs1@yahoo.fr"><div class="contact rounded"><img src="img/email.png" alt="email"><span class="hiden text-center">martinzs1@yahoo.fr</span></div></a>
+	</div>
+	<footer>
+		Portfolio created by Martin ZERBIB SEBIROT
+	</footer>
+</body>
