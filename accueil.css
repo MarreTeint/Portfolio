@@ -1,3 +1,4 @@
+/*Fonts*/
 @font-face{
 	font-family: principal;
 	src: url("font/Silkscreen/Silkscreen-Regular.ttf");
@@ -7,6 +8,8 @@
 	src: url("font/Montserrat/Montserrat-VariableFont_wght.ttf");
 }
 
+/*Global*/
+
 body{
 	margin: 0px;
 	font-family: secondary;
@@ -14,6 +17,7 @@ body{
 	background: linear-gradient(146deg, rgba(4,4,62,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 100%);
 }
 
+/*navbar*/
 nav{
 	height: 50px;
 	background: rgba(0, 0, 0, 0.5);
@@ -37,7 +41,7 @@ nav{
 #navbar a:hover{
 	color: blue;
 }
-
+/*Intro*/
 #entrance{
 	height: 100vh;
 }
@@ -48,19 +52,27 @@ h1{
 	position: absolute;
   	top: 50%;
   	color: white;
+  	font-size: 100px;
 } 
+
+/*About me*/
 
 h2{
 	font-family: principal;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 #me{
 	background: white;
+	padding: 10vw;
 }
+
+/*experiences*/
 
 #work{
 	color: white;
+    padding: 10vw;
 }
 
 img{
@@ -82,7 +94,9 @@ img{
 
 #work img{
 	
-	width: 20vw;
+	max-width: 500px;
+	width: 15vw;
+	min-width: 200px;
 	   position: absolute;
    left: 50%;
    top: 50%;
@@ -93,9 +107,47 @@ img{
 	grid-column: 6/10;
 }
 
+/*skills*/
+
 #skills_title{
 	background: white;
+	padding: 10vw;
 }
+
+
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+
+input[type=radio]:checked + label{
+  color: white;
+  background: blue;
+}
+
+label + input[type=radio] + label {
+  border-left: solid $borderWidth $fg;
+}
+.radio-group {
+  border: solid black;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
 
 button{
 	margin: 10px;
@@ -107,7 +159,16 @@ button{
 
 #skills img{
 	max-height: 90px;
-	margin: 5px;
+	margin: 15px;
+}
+
+
+
+/*projects*/
+
+#project{
+	padding: 10vw;
+	color: white;
 }
 
 .githublink{
@@ -117,8 +178,18 @@ button{
 	height: 40em;
 }
 
+/*studies*/
+
 #studies{
 	background: white;
+	padding: 10vw;
+}
+
+/*contact*/
+
+#contact{
+	color: white;
+	padding: 10vw;
 }
 
 .contact{
