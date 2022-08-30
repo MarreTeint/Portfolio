@@ -36,6 +36,16 @@ h2{
 	margin-top: 0px;
 }
 
+h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h6{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 /*navbar*/
 nav{
 	height: 50px;
@@ -178,9 +188,28 @@ label + input[type=radio] + label {
 	color: white;
 }
 
+.it{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.desc{
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.minorp{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .githublink{
 	height: 30px;
 	transition: transform 0.5s ease-in-out;
+	margin: 0px;
 }
 
 .githublink:hover{
@@ -189,9 +218,17 @@ label + input[type=radio] + label {
   transform-origin: center
 }
 .projectimg{
-	height: 40em;
+	width: 45vw;
+	margin: 0px;
 }
 
+.minordesc{
+	max-width: 15vw;
+}
+
+.useskill{
+	margin-right: 25px;
+}
 /*studies*/
 
 #studies{
