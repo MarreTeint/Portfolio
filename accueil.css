@@ -92,6 +92,8 @@ nav{
 #me{
 	background: white;
 	padding: 10vw;
+	padding-left: 20vw;
+	padding-right: 20vw;
 }
 
 /*experiences*/
@@ -137,6 +139,7 @@ nav{
 	overflow: hidden;
 	width: 50vw;
 	margin-right: auto;
+	padding: 25px;
 }
 #skills img{
 	height: 90px;
@@ -207,6 +210,7 @@ label + input[type=radio] + label {
 }
 
 .minorp{
+	margin-top: 75px;
 	display: flex;
   flex-direction: row;
   justify-content: space-between;
