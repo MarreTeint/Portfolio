@@ -9,7 +9,6 @@
 }
 
 /*Global*/
-
 body{
 	margin: 0px;
 	font-family: secondary;
@@ -17,13 +16,33 @@ body{
 	background: linear-gradient(146deg, rgba(4,4,62,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 100%);
 }
 
+img{
+	margin: 5px;
+}
+
+h1{
+	font-family: principal;
+	display: inline;
+	position: absolute;
+  	top: 50%;
+  	color: white;
+  	font-size: 100px;
+} 
+
+h2{
+	font-family: principal;
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 0px;
+}
+
 /*navbar*/
 nav{
 	height: 50px;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(4,4,62,1);
 	position: fixed;
 	width: 100%;
-  	display: block;
+  display: block;
 	z-index: 9999;
 	top: 0px;
 	transition: top 0.3s;
@@ -46,22 +65,7 @@ nav{
 	height: 100vh;
 }
 
-h1{
-	font-family: principal;
-	display: inline;
-	position: absolute;
-  	top: 50%;
-  	color: white;
-  	font-size: 100px;
-} 
-
 /*About me*/
-
-h2{
-	font-family: principal;
-	text-align: center;
-	margin-bottom: 100px;
-}
 
 #me{
 	background: white;
@@ -73,10 +77,6 @@ h2{
 #work{
 	color: white;
     padding: 10vw;
-}
-
-img{
-	margin: 5px;
 }
 
 .wrap{
@@ -111,14 +111,34 @@ img{
 
 #skills_title{
 	background: white;
-	padding: 10vw;
+	padding-top: 10vw;
+	padding-right: 25vw;
+	padding-bottom: 10vw;
+	padding-left: 25vw;
 }
 
+#skills{
+	border: solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 50vw;
+	margin-right: auto;
+}
+#skills img{
+	height: 90px;
+	margin: 15px;
+	transition: transform 0.5s ease-in-out;
+}
+
+#skills img:hover{
+	filter: drop-shadow(0 0 0.75rem rgba(4,4,62,1));
+	transform: scale(1.1);
+  transform-origin: center
+}
 
 
 input[type=radio] {
   position: absolute;
-  visibility: hidden;
   display: none;
 }
 
@@ -127,41 +147,28 @@ label {
   cursor: pointer;
   font-weight: bold;
   padding: 5px 20px;
-  margin-right: 0px;
-  margin-bottom: 10px;
 }
 
 input[type=radio]:checked + label{
   color: white;
-  background: blue;
+  background-size: cover;
+  background: rgba(4,4,62,1);
 }
 
 label + input[type=radio] + label {
-  border-left: solid $borderWidth $fg;
+  border-left: solid black;
 }
+
 .radio-group {
   border: solid black;
   display: inline-block;
-  margin: 20px;
   border-radius: 10px;
   overflow: hidden;
-}
-
-
-
-button{
-	margin: 10px;
 }
 
 .btn-outline-secondary{
 	display: none;
 }
-
-#skills img{
-	max-height: 90px;
-	margin: 15px;
-}
-
 
 
 /*projects*/
@@ -173,6 +180,13 @@ button{
 
 .githublink{
 	height: 30px;
+	transition: transform 0.5s ease-in-out;
+}
+
+.githublink:hover{
+	filter: drop-shadow(0 0 0.75rem rgba(4,4,62,1));
+	transform: scale(1.1);
+  transform-origin: center
 }
 .projectimg{
 	height: 40em;
