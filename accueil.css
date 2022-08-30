@@ -22,11 +22,10 @@ img{
 
 h1{
 	font-family: principal;
-	display: inline;
-	position: absolute;
-  	top: 50%;
-  	color: white;
-  	font-size: 100px;
+  color: white;
+  font-size: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 } 
 
 h2{
@@ -74,6 +73,18 @@ nav{
 /*Intro*/
 #entrance{
 	height: 100vh;
+	display: flex;
+	align-items: center;
+	color: white;
+	padding-left: 5vw;
+}
+
+#entrance a{
+	color: rgba(0,212,255,1);
+}
+
+#entrance a:hover{
+ text-decoration: underline;
 }
 
 /*About me*/
@@ -91,31 +102,23 @@ nav{
 }
 
 .wrap{
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-gap: 10px;
-  	grid-auto-rows: minmax(100px, auto);
-  	margin-bottom: 75px;
-}
-
-#work .contain{
-	position: relative;
-	grid-column: 3/5;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  margin-bottom: 75px;
+  padding-left: 15vw;
 }
 
 #work img{
 	
 	max-width: 500px;
-	width: 15vw;
+	width: 10vw;
 	min-width: 200px;
-	   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
 }
 
 .description{
-	grid-column: 6/10;
+	width: 40vw;
+	margin-left: 25px;
 }
 
 /*skills*/
@@ -195,8 +198,11 @@ label + input[type=radio] + label {
   align-items: center;
   margin-bottom: 50px;
 }
-.desc{
+.itdesc{
 	margin-right: 25px;
+}
+
+.tidesc{
 	margin-left: 25px;
 }
 
@@ -235,6 +241,26 @@ label + input[type=radio] + label {
 #studies{
 	background: white;
 	padding: 10vw;
+}
+
+.study_line{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.date{
+	width: 6vw;
+}
+.stdimg{
+	width: 20vw;
+}
+.stdimg img{
+	width: 20vw;
+}
+.stddesc{
+	width: 50vw;
 }
 
 /*contact*/

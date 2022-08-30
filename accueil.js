@@ -135,13 +135,13 @@ function skills(e){
 
 //Typing name
 var inside = "";
-var name = "Martin<br>ZERBIB SEBIROT"
+var name = "Martin ZERBIB SEBIROT.<br>   I’m a Software Engineer."
 var i = 0
 window.onload = function (){
 		window.setInterval(function(){
 			if(i<name.length){
 				inside = inside+name[i];
-				if(inside=="Martin<"){
+				if(inside=="Martin ZERBIB SEBIROT.<"){
 					inside = inside+name[i+1];
 					i++
 				}
@@ -149,7 +149,7 @@ window.onload = function (){
 				document.getElementById("name").innerHTML=inside;
 			}
 			i++;
-		}, 100);
+		}, 75);
 		window.setInterval(function(){
 			const z = document.getElementsByClassName("underscore");
 			for (const e of z) {
