@@ -45,7 +45,10 @@ h6{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
+a{
+	color: white;
+	text-decoration: none;
+}
 /*navbar*/
 nav{
 	height: 50px;
@@ -59,14 +62,12 @@ nav{
 	backdrop-filter: blur(15px);
 	text-align: right;
 }
+
 #navbar a{
-	color: white;
-	margin-right: 5em;
 	position: relative;
 	top: 50%;
-	text-decoration: none;
+	margin-right: 5em;
 }
-
 #navbar a:hover{
 	color: blue;
 }
@@ -243,24 +244,42 @@ label + input[type=radio] + label {
 	padding: 10vw;
 }
 
+#contact_list{
+	display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
 .contact{
-	width: 102px;
+	width: 101px;
 	height: 102px;
-	transition: width 1s ease-in-out;
+	transition: width 0.75s ease-in-out;
 	margin: 10px;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	overflow: hidden;
+	white-space: nowrap;
 	border: 1px solid black;
+	border-radius: 10px;
 }
-.contact .hiden{
-	display: none;
-}
+
 .contact:hover{
-	width: 280px;
+	box-shadow: rgba(4,4,62, 0.4) 5px 5px, rgba(4,4,62, 0.3) 10px 10px, rgba(4,4,62, 0.2) 15px 15px, rgba(4,4,62, 0.1) 20px 20px, rgba(4,4,62, 0.05) 25px 25px;
 }
-.contact:hover .hiden{
-	display: inline;
+.linkedin:hover{
+	width: 310px;
 }
+.github:hover{
+	width: 200px;
+}
+.mail:hover{
+	width: 260px;
+}
+
+.atext{
+	color: white;
+	text-decoration: none;
+}
+
 .contact img{
 	height: 90px;
 	width: 90px;
