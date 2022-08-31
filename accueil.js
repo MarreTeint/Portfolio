@@ -19,8 +19,6 @@ function skills(e){
 			for (const element of d) {
 				  element.style.display = 'inline';
 			}
-			document.getElementById("frontb").style.display = "none";
-			document.getElementById("backb").style.display = "none";
 		break;
 		case "software":
 			
@@ -40,8 +38,6 @@ function skills(e){
 			for (const element of i) {
 				  element.style.display = 'none';
 			}
-			document.getElementById("frontb").style.display = "none";
-			document.getElementById("backb").style.display = "none";
 			
 		break;
 		case "graphics":
@@ -62,8 +58,6 @@ function skills(e){
 			for (const element of m) {
 				  element.style.display = 'none';
 			}
-			document.getElementById("frontb").style.display = "none";
-			document.getElementById("backb").style.display = "none";
 			
 		break;
 		case "web":
@@ -84,29 +78,7 @@ function skills(e){
 			for (const element of q) {
 				  element.style.display = 'none';
 			}
-			document.getElementById("frontb").style.display = "inline-block";
-			document.getElementById("backb").style.display = "inline-block";
-			
-		break;
-		case "front":
-			const r = document.getElementsByClassName("front");
-			for (const element of r) {
-				  element.style.display = 'inline';
-			}
-			const s = document.getElementsByClassName("back");
-			for (const element of s) {
-				  element.style.display = 'none';
-			}
-		break;
-		case "back":
-			const t = document.getElementsByClassName("front");
-			for (const element of t) {
-				  element.style.display = 'none';
-			}
-			const u = document.getElementsByClassName("back");
-			for (const element of u) {
-				  element.style.display = 'inline';
-			}
+
 		break;
 		case "other":
 			
@@ -126,8 +98,6 @@ function skills(e){
 			for (const element of y) {
 				  element.style.display = 'inline';
 			}
-			document.getElementById("frontb").style.display = "none";
-			document.getElementById("backb").style.display = "none";
 		break;
 	}
 
