@@ -17,7 +17,7 @@ body{
 	margin: 0px;
 	font-family: secondary;
 	background: rgb(4,4,62);
-	background: linear-gradient(146deg, rgba(4,4,62,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(135deg, rgba(4,4,62,1) 0%, rgba(9,9,121,1) 7%, rgba(0,212,255,1) 100%);
 }
 
 img{
@@ -73,13 +73,13 @@ nav{
 #navbar a{
 	margin-right: 5em;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1394px){
 #navbar a:hover{
 	color: blue;
 }
 
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1395px){
 	nav{
 		display: none;
 	}
@@ -97,7 +97,7 @@ nav{
 #entrance a{
 	color: rgba(0,212,255,1);
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1394px){
 #entrance a:hover{
  text-decoration: underline;
 }
@@ -120,10 +120,9 @@ nav{
 
 .wrap{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
   margin-bottom: 75px;
-  padding-left: 15vw;
 }
 
 #work img{
@@ -134,9 +133,25 @@ nav{
 }
 
 .description{
-	width: 40vw;
+	max-width: 35vw;
 	margin-left: 25px;
 }
+@media screen and (max-width: 1395px){
+	.wrap{
+		flex-direction: column;
+		padding-left: 0vw;
+	}
+	#work img{
+	width: 100%;
+	min-width: 50vw;
+}
+.description{
+	max-width: 100%;
+	
+}
+}
+
+
 
 /*skills*/
 
@@ -153,7 +168,6 @@ nav{
 	border-radius: 10px;
 	overflow: hidden;
 	width: 50vw;
-	margin-right: auto;
 	padding: 25px;
 	text-align: justify;
 }
@@ -163,7 +177,7 @@ nav{
 	transition: transform 0.5s ease-in-out;
 	display: inline-block;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1394px){
 #skills img:hover{
 	filter: drop-shadow(0 0 0.75rem rgba(4,4,62,1));
 	transform: scale(1.1);
@@ -200,18 +214,21 @@ label + input[type=radio] + label {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1395px){
 	#skills_title{
 		padding-right: 15vw;
-		padding-left: 15vw;
+		padding-left: 10vw;
 	}
 	#skills{
-		margin-right: 0px;
-		margin-left: 0px;
+		display: block;
+		margin-right: 20vw;
 		width: 100%;
 	}
 	.radio-group{
 		display: none;
+	}
+	#skills img{
+		height: 120px;
 	}
 }
 
@@ -228,6 +245,15 @@ label + input[type=radio] + label {
   align-items: center;
   margin-bottom: 50px;
 }
+
+.ti{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
 .itdesc{
 	margin-right: 25px;
 }
@@ -249,7 +275,7 @@ label + input[type=radio] + label {
 	transition: transform 0.5s ease-in-out;
 	margin: 0px;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1394px){
 .githublink:hover{
 	filter: drop-shadow(0 0 0.75rem rgba(4,4,62,1));
 	transform: scale(1.1);
@@ -264,14 +290,30 @@ label + input[type=radio] + label {
 .minordesc{
 	max-width: 15vw;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1395px){
 	.minordesc{
 		max-width: 23vw;
 	}
 	.githublink{
 		height: 60px;
 	}
+		.it{
+		flex-direction: column-reverse;
 	}
+	.ti{
+		flex-direction: column;
+	}
+	.itdesc{
+	margin-right: 0px;
+}
+
+.tidesc{
+	margin-left: 0px;
+}
+.projectimg{
+	width: 100%;
+	}
+}
 
 
 .useskill{
@@ -293,7 +335,6 @@ label + input[type=radio] + label {
 
 .date{
 	width: 6vw;
-	min-width: 150px;
 }
 .stdimg{
 	width: 20vw;
@@ -304,6 +345,27 @@ label + input[type=radio] + label {
 .stddesc{
 	margin-left: 25px;
 	width: 50vw;
+}
+@media screen and (max-width: 1395px){
+.study_line{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+.date{
+	width: 100%;
+}
+.stdimg{
+	width: 100%;
+}
+.stdimg img{
+	width: 100%;
+}
+.stddesc{
+	margin-left: 0px;
+	margin-bottom: 25px;
+	width: 100%;
+}
 }
 
 /*contact*/
@@ -318,7 +380,9 @@ label + input[type=radio] + label {
   flex-direction: row;
   justify-content: center; 
 }
-.contact{
+
+@media screen and (min-width: 1395px){
+	.contact{
 	width: 101px;
 	height: 102px;
 	transition: width 0.75s ease-in-out;
@@ -330,7 +394,6 @@ label + input[type=radio] + label {
 	border: 1px solid black;
 	border-radius: 10px;
 }
-@media screen and (min-width: 1024px){
 .contact:hover{
 	box-shadow: rgba(4,4,62, 0.4) 5px 5px, rgba(4,4,62, 0.3) 10px 10px, rgba(4,4,62, 0.2) 15px 15px, rgba(4,4,62, 0.1) 20px 20px, rgba(4,4,62, 0.05) 25px 25px;
 }
@@ -338,30 +401,39 @@ label + input[type=radio] + label {
 	width: 310px;
 }
 .github:hover{
-	width: 200px;
+	width: 220px;
 }
 .mail:hover{
 	width: 260px;
 }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1394px){
 	#contact_list{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 	.contact{
+		display: flex;
+	align-items: center;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px;
 	box-shadow: rgba(4,4,62, 0.4) 5px 5px, rgba(4,4,62, 0.3) 10px 10px, rgba(4,4,62, 0.2) 15px 15px, rgba(4,4,62, 0.1) 20px 20px, rgba(4,4,62, 0.05) 25px 25px;
+	padding-right: 5px;
+	width: 80vw;
 }
-.linkedin{
-	width: 51vw;
+/*.linkedin{
+	width: 310px;
 }
 .github{
-	width: 29vw;
+	width: 200px;
 }
 .mail{
-	width: 43vw;
-}
+	width: 260px;
+}*/
 
 }
 
