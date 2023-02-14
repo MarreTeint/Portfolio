@@ -84,6 +84,10 @@ nav{
 		display: none;
 	}
 }
+
+.whiteCotrast{
+	filter: drop-shadow(0 0 0.5rem rgba(150, 150, 150));
+}
 /*Intro*/
 #entrance{
 	height: 100vh;
