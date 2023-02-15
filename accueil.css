@@ -246,6 +246,7 @@ label + input[type=radio] + label {
 .it{
 	display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -253,6 +254,7 @@ label + input[type=radio] + label {
 .ti{
 	display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -287,8 +289,9 @@ label + input[type=radio] + label {
 }
 }
 .projectimg{
-	width: 45vw;
+	max-width: 45vw;
 	margin: 0px;
+	max-height: 60vh;
 }
 
 .minordesc{
